@@ -1,0 +1,625 @@
+.bandeau {
+            background-color: #fffacd; /* Jaune pâle */
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #e0c000;
+        }
+        .profil {
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            white-space: nowrap;
+        }
+        .profil img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .contact-buttons a {
+            margin-left: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+
+        }
+
+header {
+    color : orange;
+font-family: Helvetica, sans-serif; 
+
+}
+
+
+
+
+body {
+            margin: 0;
+          /*  overflow: hidden;  <-- enlevé car on pouvait pas descendre dans la page*/
+        }
+
+
+        .menu {
+            position: fixed;
+            top: 20;
+            left: 160px; /* Léger décalage */
+            width: 200px;
+            height: 200vh;
+            padding-top: 20px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu ul li {
+            padding: 8px;
+            text-align: left;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .menu ul li a:hover {
+            color: grey;
+        }
+
+.gallery {                              /* sert à mettre les images en colonnes */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            padding: 20px;
+            margin-left: 290px; /* Décalage pour éviter le menu */
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+
+
+
+
+
+
+.video-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+    border-radius: 10px; /* Arrondir les bords */
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.play-icon.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+
+.gallery-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+figure {
+  margin: 200;
+  padding: 0;
+  text-align: center;
+}
+
+figure img {
+  height: auto;
+  border-radius: 2px;
+  box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+}
+
+figcaption {
+  margin-top: 0rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.full-width {
+  margin-bottom: 2rem;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+  margin-bottom: -2rem;
+}
+
+.image-row figure {
+  flex: 1;
+  min-width: 2px;
+}
+
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;  /* Permet aux images de passer à la ligne suivante si l'espace est insuffisant */
+  gap: 1rem; /* Espace entre les images */
+  justify-content: center; /* Centre les images horizontalement */
+}
+
+.image-item {
+  flex: 1 1 30%; /* Chaque image occupe 30% de la largeur de la ligne */
+  max-width: 30%; /* Assure que les images ne dépassent pas 30% de la largeur */
+}
+
+.image-item img {
+  width: 100%;  /* Les images remplissent leur conteneur */
+  height: auto; /* Conserve les proportions */
+  border-radius: 8px; /* Optionnel : bordure arrondie des images */
+}
+
+
+.section-title::before {
+  content: "";
+  display: block;
+  width: 520px;
+  height: 1.5px;
+  background-color: #ccc;
+  margin: 5rem auto 0;
+  border-radius: 0px;
+}
+
+.section-title {
+  margin: 3rem 0 1.5rem;
+  padding-left: 22rem; /* ou 1.5rem pour un léger décalage */
+ }
+
+ .section-title, .section-title h2 {
+  margin-left: 50;
+}
+
+.section-title h2 {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #222;
+  margin: 0;
+  font-family: inherit; /* même police que le reste */
+}
+
+
+
+.section-title .subtitle {
+  font-style: italic;
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/*POUR les projets*/
+
+
+.section-title03 {
+  margin: 3rem 0 1.5rem;
+  padding-left: 22rem; /* ou 1.5rem pour un léger décalage */
+ }
+
+ .section-title03, .section-title03 h2 {
+  margin-left: 50;
+}
+
+
+.section-title03 h2 {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #222;
+  margin: 0;
+  font-family: inherit; /* même police que le reste */
+}
+
+
+
+.section-title03 .subtitle {
+  font-style: italic;
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+
+a img {
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+a img:hover {
+  filter: brightness(0.85);
+}
+
+
+
+
+
+/*POUR le contact*/
+
+
+.section-title2 h2 {
+  font-size: 1.2rem;
+  font-weight: lighter;
+  color: #222;
+  margin: 0;
+  font-family: inherit; /* même police que le reste */
+}
+
+.section-title2 .subtitle {
+  font-style: italic;
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* POUR LES DECORS */
+
+
+    .slider {  /* pour la page décor */
+            position: relative;
+            max-width: 800px;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .dots {
+            text-align: center;
+            padding: 10px;
+        }
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background: gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active {
+            background: black;
+        }
+
+
+     .slider02 {  /* pour la page décor 02 */
+            position: relative;
+            max-width: 800px;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+        .slides02 {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides02 img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .dots02 {
+            text-align: center;
+            padding: 10px;
+        }
+        .dot02 {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background: gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active02 {
+            background: black;
+        }    
+
+         .slider03 {  /* pour la page décor 03 */
+            position: relative;
+            max-width: 800px;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+        .slides03 {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides03 img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .dots03 {
+            text-align: center;
+            padding: 10px;
+        }
+        .dot03 {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background: gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active03 {
+            background: black;
+        }    
+
+
+
+          .slider04 {  /* pour la page décor 04 */
+            position: relative;
+            max-width: 800px;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+        .slides04 {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides04 img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .dots04 {
+            text-align: center;
+            padding: 10px;
+        }
+        .dot04 {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background: gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active04 {
+            background: black;
+        }    
+
+
+          .slider05 {  /* pour la page décor 05 */
+            position: relative;
+            max-width: 800px;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+        .slides05 {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides05 img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .dots05 {
+            text-align: center;
+            padding: 10px;
+        }
+        .dot05 {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background: gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active05 {
+            background: black;
+        }    
+
+
+  .slider06 {  /* pour la page décor 06 */
+            position: relative;
+            max-width: 800px;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+        .slides06 {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides06 img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .dots06 {
+            text-align: center;
+            padding: 10px;
+        }
+        .dot06 {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background: gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active06 {
+            background: black;
+        }    
+
+
+
+  .slider07 {  /* pour la page décor 07 */
+            position: relative;
+            max-width: 800px;
+            margin: 0px auto;
+            overflow: hidden;
+        }
+        .slides07 {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides07 img {
+            width: 100%;
+            height: auto;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 40%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .dots07 {
+            text-align: center;
+            padding: 10px;
+        }
+        .dot07 {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            background: gray;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .active07 {
+            background: black;
+        }    
+
+

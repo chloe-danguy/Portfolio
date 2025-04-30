@@ -1,0 +1,77 @@
+.bandeau {
+            background-color: #fffacd; /* Jaune pâle */
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #e0c000;
+        }
+        .profil {
+            display: flex;
+            align-items: center;
+            font-size: 25px;
+            white-space: nowrap;
+        }
+        .profil img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .contact-buttons a {
+            margin-left: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+
+        }
+header {
+    color : orange;
+font-family: Helvetica, sans-serif; 
+
+}
+
+
+body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Helvetica.ttf
+        }
+.video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .menu {
+            position: fixed;
+            top: 20;
+            left: 160px; /* Léger décalage */
+            width: 200px;
+            height: 200vh;
+            padding-top: 20px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu ul li {
+            padding: 8px;
+            text-align: left;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        .menu ul li a:hover {
+            color: grey;
+        }
+
+
+
