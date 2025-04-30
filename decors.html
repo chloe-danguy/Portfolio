@@ -49,352 +49,356 @@
 
 
 
-    <div class="slider">
-        <div class="slides">
-            <img src="image/DECOR_UCDH_01.png" alt="Image 1">
-            <img src="image/DECOR_UCDH_02.png" alt="Image 2">
-            <img src="image/DECOR_UCDH_03.png" alt="Image 3">
-            <img src="image/DECOR_UCDH_04.png" alt="Image 4">
-            <img src="image/DECOR_UCDH_05.png" alt="Image 5">
-            <img src="image/DECOR_UCDH_06.png" alt="Image 6">
-            <img src="image/DECOR_UCDH_07.png" alt="Image 7">
-            <img src="image/DECOR_UCDH_08.png" alt="Image 8">
-            <img src="image/DECOR_UCDH_09.png" alt="Image 9">
-            <img src="image/DECOR_UCDH_10.png" alt="Image 10">
-        </div>
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(0)"></span>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
-            <span class="dot" onclick="currentSlide(9)"></span>
-        </div>
-        <p> <h3> <FONT face="Helvetica"> Un coeur d'Homme (2025) </h3> 
+   <div class="slider"> 
+    <div class="slides">
+        <img src="image/DECOR_UCDH_01.webp" alt="Image 1">
+        <img src="image/DECOR_UCDH_02.webp" alt="Image 2">
+        <img src="image/DECOR_UCDH_03.webp" alt="Image 3">
+        <img src="image/DECOR_UCDH_04.webp" alt="Image 4">
+        <img src="image/DECOR_UCDH_05.webp" alt="Image 5">
+        <img src="image/DECOR_UCDH_06.webp" alt="Image 6">
+        <img src="image/DECOR_UCDH_07.webp" alt="Image 7">
+        <img src="image/DECOR_UCDH_08.webp" alt="Image 8">
+        <img src="image/DECOR_UCDH_09.webp" alt="Image 9">
+        <img src="image/DECOR_UCDH_10.webp" alt="Image 10">
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+    <p> <h3> <FONT face="Helvetica"> Un coeur d'Homme (2025) </h3> 
     <h5> Acrylique <br> </p> </h5>
-
-    </div>
-
-    
-       <script>
-        let index = 0;
-        function moveSlide(step) {
-            const slides = document.querySelector('.slides');
-            const dots = document.querySelectorAll('.dot');
-            index = (index + step + 10) % 10;
-            slides.style.transform = `translateX(${-index * 100}%)`;
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[index].classList.add('active');
-        }
-        function currentSlide(n) {
-            index = n;
-            moveSlide(0);
-        }
-        document.addEventListener("DOMContentLoaded", () => moveSlide(0));
-    </script>
-
-
-    <div class="slider02">
-        <div class="slides02">
-            <img src="image/DECOR_FFE_01.png" alt="Image 1">
-            <img src="image/DECOR_FFE_02.png" alt="Image 2">
-            <img src="image/DECOR_FFE_03.png" alt="Image 3">
-            <img src="image/DECOR_FFE_04.png" alt="Image 4">
-            <img src="image/DECOR_FFE_05.png" alt="Image 5">
-            <img src="image/DECOR_FFE_06.png" alt="Image 6">
-            <img src="image/DECOR_FFE_07.png" alt="Image 7">
-            <img src="image/DECOR_FFE_08.png" alt="Image 8">
-            <img src="image/DECOR_FFE_09.png" alt="Image 9">
-            <img src="image/DECOR_FFE_10.png" alt="Image 10">
-            <img src="image/DECOR_FFE_11.png" alt="Image 11">
-            <img src="image/DECOR_FFE_12.png" alt="Image 12">
-        </div>
-        <button class="prev" onclick="moveSlide02(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide02(1)">&#10095;</button>
-        <div class="dots02">
-            <span class="dot02" onclick="currentSlide02(0)"></span>
-            <span class="dot02" onclick="currentSlide02(1)"></span>
-            <span class="dot02" onclick="currentSlide02(2)"></span>
-            <span class="dot02" onclick="currentSlide02(3)"></span>
-            <span class="dot02" onclick="currentSlide02(4)"></span>
-            <span class="dot02" onclick="currentSlide02(5)"></span>
-            <span class="dot02" onclick="currentSlide02(6)"></span>
-            <span class="dot02" onclick="currentSlide02(7)"></span>
-            <span class="dot02" onclick="currentSlide02(8)"></span>
-            <span class="dot02" onclick="currentSlide02(9)"></span>
-            <span class="dot02" onclick="currentSlide02(10)"></span>
-            <span class="dot02" onclick="currentSlide02(11)"></span>
-        </div>
-        <p> <h3> <FONT face="Helvetica"> Sous l'écorce (2024) </h3> 
-    <h5> Acrylique <br> </p> </h5>
-
-
-    </div>
-
-  <script>
-        let index02 = 0;
-        function moveSlide02(step) {
-            const slides02 = document.querySelector('.slides02');
-            const dots02 = document.querySelectorAll('.dot02');
-            index02 = (index02 + step + 12) % 12;
-            slides02.style.transform = `translateX(${-index02 * 100}%)`;
-            dots02.forEach(dot02 => dot02.classList.remove('active02'));
-            dots02[index02].classList.add('active02');
-        }
-        function currentSlide02(n) {
-            index02 = n;
-            moveSlide02(0);
-        }
-        document.addEventListener("DOMContentLoaded", () => moveSlide02(0));
-    </script>
-
-    <br>    
-    <div class="slider03">
-        <div class="slides03">
-            <img src="image/DECOR_MIAOUCROU_01.png" alt="Image 1">
-            <img src="image/DECOR_MIAOUCROU_02.png" alt="Image 2">
-            <img src="image/DECOR_MIAOUCROU_03.png" alt="Image 3">
-            <img src="image/DECOR_MIAOUCROU_04.png" alt="Image 4">
-            <img src="image/DECOR_MIAOUCROU_05.png" alt="Image 5">
-            <img src="image/DECOR_MIAOUCROU_06.png" alt="Image 6">
-        </div>
-        <button class="prev" onclick="moveSlide03(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide03(1)">&#10095;</button>
-        <div class="dots03">
-            <span class="dot03" onclick="currentSlide03(0)"></span>
-            <span class="dot03" onclick="currentSlide03(1)"></span>
-            <span class="dot03" onclick="currentSlide03(2)"></span>
-            <span class="dot03" onclick="currentSlide03(3)"></span>
-            <span class="dot03" onclick="currentSlide03(4)"></span>
-            <span class="dot03" onclick="currentSlide03(5)"></span>
-        </div>
-        <p> <h3> <FONT face="Helvetica"> Le règne de Miaoucrou (2023) </h3> 
-    <h5> collage, crayons de couleurs <br> </p> </h5>
-    </div>
-    
+</div>
 
 <script>
-        let index03 = 0;
-        function moveSlide03(step) {
-            const slides03 = document.querySelector('.slides03');
-            const dots03 = document.querySelectorAll('.dot03');
-            index03 = (index03 + step + 6) % 6;
-            slides03.style.transform = `translateX(${-index03 * 100}%)`;
-            dots03.forEach(dot03 => dot03.classList.remove('active03'));
-            dots03[index03].classList.add('active03');
-        }
-        function currentSlide03(n) {
-            index03 = n;
-            moveSlide03(0);
-        }
-        document.addEventListener("DOMContentLoaded", () => moveSlide03(0));
-    </script>
+    let index = 0;
+    function moveSlide(step) {
+        const slides = document.querySelector('.slides');
+        const dots = document.querySelectorAll('.dot');
+        index = (index + step + 10) % 10;
+        slides.style.transform = `translateX(${-index * 100}%)`;
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[index].classList.add('active');
+    }
+    function currentSlide(n) {
+        index = n;
+        moveSlide(0);
+    }
+    document.addEventListener("DOMContentLoaded", () => moveSlide(0));
+</script>
+
+<div class="slider02">
+    <div class="slides02">
+        <img src="image/DECOR_FFE_01.webp" alt="Image 1">
+        <img src="image/DECOR_FFE_02.webp" alt="Image 2">
+        <img src="image/DECOR_FFE_03.webp" alt="Image 3">
+        <img src="image/DECOR_FFE_04.webp" alt="Image 4">
+        <img src="image/DECOR_FFE_05.webp" alt="Image 5">
+        <img src="image/DECOR_FFE_06.webp" alt="Image 6">
+        <img src="image/DECOR_FFE_07.webp" alt="Image 7">
+        <img src="image/DECOR_FFE_08.webp" alt="Image 8">
+        <img src="image/DECOR_FFE_09.webp" alt="Image 9">
+        <img src="image/DECOR_FFE_10.webp" alt="Image 10">
+        <img src="image/DECOR_FFE_11.webp" alt="Image 11">
+        <img src="image/DECOR_FFE_12.webp" alt="Image 12">
+    </div>
+    <button class="prev" onclick="moveSlide02(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide02(1)">&#10095;</button>
+    <div class="dots02">
+        <span class="dot02" onclick="currentSlide02(0)"></span>
+        <span class="dot02" onclick="currentSlide02(1)"></span>
+        <span class="dot02" onclick="currentSlide02(2)"></span>
+        <span class="dot02" onclick="currentSlide02(3)"></span>
+        <span class="dot02" onclick="currentSlide02(4)"></span>
+        <span class="dot02" onclick="currentSlide02(5)"></span>
+        <span class="dot02" onclick="currentSlide02(6)"></span>
+        <span class="dot02" onclick="currentSlide02(7)"></span>
+        <span class="dot02" onclick="currentSlide02(8)"></span>
+        <span class="dot02" onclick="currentSlide02(9)"></span>
+        <span class="dot02" onclick="currentSlide02(10)"></span>
+        <span class="dot02" onclick="currentSlide02(11)"></span>
+    </div>
+    <p> <h3> <FONT face="Helvetica"> Sous l'écorce (2024) </h3> 
+    <h5> Acrylique <br> </p> </h5>
+</div>
+
+<script>
+    let index02 = 0;
+    function moveSlide02(step) {
+        const slides02 = document.querySelector('.slides02');
+        const dots02 = document.querySelectorAll('.dot02');
+        index02 = (index02 + step + 12) % 12;
+        slides02.style.transform = `translateX(${-index02 * 100}%)`;
+        dots02.forEach(dot02 => dot02.classList.remove('active02'));
+        dots02[index02].classList.add('active02');
+    }
+    function currentSlide02(n) {
+        index02 = n;
+        moveSlide02(0);
+    }
+    document.addEventListener("DOMContentLoaded", () => moveSlide02(0));
+</script>
 
 <br>    
-    <div class="slider04">
-        <div class="slides04">
-            <img src="image/DECOR_CLEMENCE_01.jpg" alt="Image 1">
-            <img src="image/DECOR_CLEMENCE_02.jpg" alt="Image 2">
-            <img src="image/DECOR_CLEMENCE_03.jpg" alt="Image 3">
-            <img src="image/DECOR_CLEMENCE_04.jpg" alt="Image 4">
-            <img src="image/DECOR_CLEMENCE_05.jpg" alt="Image 5">
-            <img src="image/DECOR_CLEMENCE_06.jpg" alt="Image 6">
-            <img src="image/DECOR_CLEMENCE_07.jpg" alt="Image 7">
-            <img src="image/DECOR_CLEMENCE_08.jpg" alt="Image 8">
-            <img src="image/DECOR_CLEMENCE_09.jpg" alt="Image 9">
-            <img src="image/DECOR_CLEMENCE_10.jpg" alt="Image 10">
-            <img src="image/DECOR_CLEMENCE_11.jpg" alt="Image 11">
-        </div>
-        <button class="prev" onclick="moveSlide04(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide04(1)">&#10095;</button>
-        <div class="dots04">
-            <span class="dot04" onclick="currentSlide04(0)"></span>
-            <span class="dot04" onclick="currentSlide04(1)"></span>
-            <span class="dot04" onclick="currentSlide04(2)"></span>
-            <span class="dot04" onclick="currentSlide04(3)"></span>
-            <span class="dot04" onclick="currentSlide04(4)"></span>
-            <span class="dot04" onclick="currentSlide04(5)"></span>
-            <span class="dot04" onclick="currentSlide04(6)"></span>
-            <span class="dot04" onclick="currentSlide04(7)"></span>
-            <span class="dot04" onclick="currentSlide04(8)"></span>
-            <span class="dot04" onclick="currentSlide04(9)"></span>
-            <span class="dot04" onclick="currentSlide04(10)"></span>
-            <span class="dot04" onclick="currentSlide04(11)"></span>
-        </div>
-        <p> <h3> <FONT face="Helvetica"> Clémence en vacances (2023) </h3> 
-    <h5> pastel gras, crayons de couleurs <br> </p> </h5>
+<div class="slider03">
+    <div class="slides03">
+        <img src="image/DECOR_MIAOUCROU_01.webp" alt="Image 1">
+        <img src="image/DECOR_MIAOUCROU_02.webp" alt="Image 2">
+        <img src="image/DECOR_MIAOUCROU_03.webp" alt="Image 3">
+        <img src="image/DECOR_MIAOUCROU_04.webp" alt="Image 4">
+        <img src="image/DECOR_MIAOUCROU_05.webp" alt="Image 5">
+        <img src="image/DECOR_MIAOUCROU_06.webp" alt="Image 6">
     </div>
-    
+    <button class="prev" onclick="moveSlide03(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide03(1)">&#10095;</button>
+    <div class="dots03">
+        <span class="dot03" onclick="currentSlide03(0)"></span>
+        <span class="dot03" onclick="currentSlide03(1)"></span>
+        <span class="dot03" onclick="currentSlide03(2)"></span>
+        <span class="dot03" onclick="currentSlide03(3)"></span>
+        <span class="dot03" onclick="currentSlide03(4)"></span>
+        <span class="dot03" onclick="currentSlide03(5)"></span>
+    </div>
+    <p> <h3> <FONT face="Helvetica"> Le règne de Miaoucrou (2023) </h3> 
+    <h5> collage, crayons de couleurs <br> </p> </h5>
+</div>
 
 <script>
-        let index04 = 0;
-        function moveSlide04(step) {
-            const slides04 = document.querySelector('.slides04');
-            const dots04 = document.querySelectorAll('.dot04');
-            index04 = (index04 + step + 11) % 11;
-            slides04.style.transform = `translateX(${-index04 * 100}%)`;
-            dots04.forEach(dot04 => dot04.classList.remove('active04'));
-            dots04[index04].classList.add('active04');
-        }
-        function currentSlide04(n) {
-            index04 = n;
-            moveSlide04(0);
-        }
-        document.addEventListener("DOMContentLoaded", () => moveSlide04(0));
-    </script>
+    let index03 = 0;
+    function moveSlide03(step) {
+        const slides03 = document.querySelector('.slides03');
+        const dots03 = document.querySelectorAll('.dot03');
+        index03 = (index03 + step + 6) % 6;
+        slides03.style.transform = `translateX(${-index03 * 100}%)`;
+        dots03.forEach(dot03 => dot03.classList.remove('active03'));
+        dots03[index03].classList.add('active03');
+    }
+    function currentSlide03(n) {
+        index03 = n;
+        moveSlide03(0);
+    }
+    document.addEventListener("DOMContentLoaded", () => moveSlide03(0));
+</script>
 
-
-    <br>    
-    <div class="slider05">
-        <div class="slides05">
-            <img src="image/DECOR_ALLEZ_VOUS-FAIRE_01.jpg" alt="Image 1">
-            <img src="image/DECOR_ALLEZ_VOUS-FAIRE_02.jpg" alt="Image 2">
-            <img src="image/DECOR_ALLEZ_VOUS-FAIRE_03.jpg" alt="Image 3">
-            <img src="image/DECOR_ALLEZ_VOUS-FAIRE_04.jpg" alt="Image 4">
-            <img src="image/DECOR_ALLEZ_VOUS-FAIRE_05.jpg" alt="Image 5">
-            <img src="image/DECOR_ALLEZ_VOUS-FAIRE_06.jpg" alt="Image 6">
-            <img src="image/DECOR_ALLEZ_VOUS-FAIRE_07.jpg" alt="Image 7">
-            <img src="image/DECOR_ALLEZ_VOUS-FAIRE_08.jpg" alt="Image 8">
-        </div>
-        <button class="prev" onclick="moveSlide05(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide05(1)">&#10095;</button>
-        <div class="dots05">
-            <span class="dot05" onclick="currentSlide05(0)"></span>
-            <span class="dot05" onclick="currentSlide05(1)"></span>
-            <span class="dot05" onclick="currentSlide05(2)"></span>
-            <span class="dot05" onclick="currentSlide05(3)"></span>
-            <span class="dot05" onclick="currentSlide05(4)"></span>
-            <span class="dot05" onclick="currentSlide05(5)"></span>
-            <span class="dot05" onclick="currentSlide05(6)"></span>
-            <span class="dot05" onclick="currentSlide05(7)"></span>
-            <span class="dot05" onclick="currentSlide05(8)"></span>
-        </div>
-        <p> <h3> <FONT face="Helvetica"> Allez vous faire voir (2022) </h3> 
-    <h5> encre, acrylique <br> </p> </h5>
+<br>    
+<div class="slider04">
+    <div class="slides04">
+        <img src="image/DECOR_CLEMENCE_01.webp" alt="Image 1">
+        <img src="image/DECOR_CLEMENCE_02.webp" alt="Image 2">
+        <img src="image/DECOR_CLEMENCE_03.webp" alt="Image 3">
+        <img src="image/DECOR_CLEMENCE_04.webp" alt="Image 4">
+        <img src="image/DECOR_CLEMENCE_05.webp" alt="Image 5">
+        <img src="image/DECOR_CLEMENCE_06.webp" alt="Image 6">
+        <img src="image/DECOR_CLEMENCE_07.webp" alt="Image 7">
+        <img src="image/DECOR_CLEMENCE_08.webp" alt="Image 8">
+        <img src="image/DECOR_CLEMENCE_09.webp" alt="Image 9">
+        <img src="image/DECOR_CLEMENCE_10.webp" alt="Image 10">
+        <img src="image/DECOR_CLEMENCE_11.webp" alt="Image 11">
     </div>
-    
+    <button class="prev" onclick="moveSlide04(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide04(1)">&#10095;</button>
+    <div class="dots04">
+        <span class="dot04" onclick="currentSlide04(0)"></span>
+        <span class="dot04" onclick="currentSlide04(1)"></span>
+        <span class="dot04" onclick="currentSlide04(2)"></span>
+        <span class="dot04" onclick="currentSlide04(3)"></span>
+        <span class="dot04" onclick="currentSlide04(4)"></span>
+        <span class="dot04" onclick="currentSlide04(5)"></span>
+        <span class="dot04" onclick="currentSlide04(6)"></span>
+        <span class="dot04" onclick="currentSlide04(7)"></span>
+        <span class="dot04" onclick="currentSlide04(8)"></span>
+        <span class="dot04" onclick="currentSlide04(9)"></span>
+        <span class="dot04" onclick="currentSlide04(10)"></span>
+    </div>
+    <p> <h3> <FONT face="Helvetica"> A la recherche de l'objet de l'image (2023) </h3> 
+    <h5> Acrylique, collages <br> </p> </h5>
+</div>
 
 <script>
-        let index05 = 0;
-        function moveSlide05(step) {
-            const slides05 = document.querySelector('.slides05');
-            const dots05 = document.querySelectorAll('.dot05');
-            index05 = (index05 + step + 8) % 8;
-            slides05.style.transform = `translateX(${-index05 * 100}%)`;
-            dots05.forEach(dot05 => dot05.classList.remove('active05'));
-            dots05[index05].classList.add('active05');
-        }
-        function currentSlide05(n) {
-            index05 = n;
-            moveSlide05(0);
-        }
-        document.addEventListener("DOMContentLoaded", () => moveSlide05(0));
-    </script>
+    let index04 = 0;
+    function moveSlide04(step) {
+        const slides04 = document.querySelector('.slides04');
+        const dots04 = document.querySelectorAll('.dot04');
+        index04 = (index04 + step + 11) % 11;
+        slides04.style.transform = `translateX(${-index04 * 100}%)`;
+        dots04.forEach(dot04 => dot04.classList.remove('active04'));
+        dots04[index04].classList.add('active04');
+    }
+    function currentSlide04(n) {
+        index04 = n;
+        moveSlide04(0);
+    }
+    document.addEventListener("DOMContentLoaded", () => moveSlide04(0));
+</script>
 
-
-    <br>    
-    <div class="slider06">
-        <div class="slides06">
-            <img src="image/DECOR_PATRIARCACA_01.jpg" alt="Image 1">
-            <img src="image/DECOR_PATRIARCACA_02.jpg" alt="Image 2">
-            <img src="image/DECOR_PATRIARCACA_03.jpg" alt="Image 3">
-            <img src="image/DECOR_PATRIARCACA_04.jpg" alt="Image 4">
-            <img src="image/DECOR_PATRIARCACA_05.jpg" alt="Image 5">
-            <img src="image/DECOR_PATRIARCACA_06.jpg" alt="Image 6">
-            <img src="image/DECOR_PATRIARCACA_07.jpg" alt="Image 7">
-            <img src="image/DECOR_PATRIARCACA_08.jpg" alt="Image 8">
-        </div>
-        <button class="prev" onclick="moveSlide06(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide06(1)">&#10095;</button>
-        <div class="dots06">
-            <span class="dot06" onclick="currentSlide06(0)"></span>
-            <span class="dot06" onclick="currentSlide06(1)"></span>
-            <span class="dot06" onclick="currentSlide06(2)"></span>
-            <span class="dot06" onclick="currentSlide06(3)"></span>
-            <span class="dot06" onclick="currentSlide06(4)"></span>
-            <span class="dot06" onclick="currentSlide06(5)"></span>
-            <span class="dot06" onclick="currentSlide06(6)"></span>
-            <span class="dot06" onclick="currentSlide06(7)"></span>
-            <span class="dot06" onclick="currentSlide06(8)"></span>
-        </div>
-        <p> <h3> <FONT face="Helvetica"> Patriarcaca (2022) </h3> 
-    <h5> collage photo, peinture acrylique <br> </p> </h5>
-    </div>
-    
 
 <script>
-        let index06 = 0;
-        function moveSlide06(step) {
-            const slides06 = document.querySelector('.slides06');
-            const dots06 = document.querySelectorAll('.dot06');
-            index06 = (index06 + step + 8) % 8;
-            slides06.style.transform = `translateX(${-index06 * 100}%)`;
-            dots06.forEach(dot06 => dot06.classList.remove('active06'));
-            dots06[index06].classList.add('active06');
-        }
-        function currentSlide06(n) {
-            index06 = n;
-            moveSlide06(0);
-        }
-        document.addEventListener("DOMContentLoaded", () => moveSlide06(0));
-    </script>
+    let index04 = 0;
+    function moveSlide04(step) {
+        const slides04 = document.querySelector('.slides04');
+        const dots04 = document.querySelectorAll('.dot04');
+        index04 = (index04 + step + 11) % 11;
+        slides04.style.transform = `translateX(${-index04 * 100}%)`;
+        dots04.forEach(dot04 => dot04.classList.remove('active04'));
+        dots04[index04].classList.add('active04');
+    }
+    function currentSlide04(n) {
+        index04 = n;
+        moveSlide04(0);
+    }
+    document.addEventListener("DOMContentLoaded", () => moveSlide04(0));
+</script>
 
-
-  <br>    
-    <div class="slider07">
-        <div class="slides07">
-            <img src="image/DECOR_MR_RENARD_01.jpg" alt="Image 1">
-            <img src="image/DECOR_MR_RENARD_02.jpg" alt="Image 2">
-            <img src="image/DECOR_MR_RENARD_03.jpg" alt="Image 3">
-            <img src="image/DECOR_MR_RENARD_04.jpg" alt="Image 4">
-            <img src="image/DECOR_MR_RENARD_05.jpg" alt="Image 5">
-            <img src="image/DECOR_MR_RENARD_06.jpg" alt="Image 6">
-            <img src="image/DECOR_MR_RENARD_07.jpg" alt="Image 7">
-            <img src="image/DECOR_MR_RENARD_08.jpg" alt="Image 8">
-            <img src="image/DECOR_MR_RENARD_09.jpg" alt="Image 9">
-            <img src="image/DECOR_MR_RENARD_10.jpg" alt="Image 10">
-        </div>
-        <button class="prev" onclick="moveSlide07(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide07(1)">&#10095;</button>
-        <div class="dots07">
-            <span class="dot07" onclick="currentSlide07(0)"></span>
-            <span class="dot07" onclick="currentSlide07(1)"></span>
-            <span class="dot07" onclick="currentSlide07(2)"></span>
-            <span class="dot07" onclick="currentSlide07(3)"></span>
-            <span class="dot07" onclick="currentSlide07(4)"></span>
-            <span class="dot07" onclick="currentSlide07(5)"></span>
-            <span class="dot07" onclick="currentSlide07(6)"></span>
-            <span class="dot07" onclick="currentSlide07(7)"></span>
-            <span class="dot07" onclick="currentSlide07(8)"></span>
-            <span class="dot07" onclick="currentSlide07(9)"></span>
-            <span class="dot07" onclick="currentSlide07(10)"></span>
-        </div>
-        <p> <h3> <FONT face="Helvetica"> Bon appetit Monsieur Renard (2021) </h3> 
-    <h5> Aquarelle digitale <br> </p> </h5>
+<br>    
+<div class="slider05">
+    <div class="slides05">
+        <img src="image/DECOR_ALLEZ_VOUS-FAIRE_01.webp" alt="Image 1">
+        <img src="image/DECOR_ALLEZ_VOUS-FAIRE_02.webp" alt="Image 2">
+        <img src="image/DECOR_ALLEZ_VOUS-FAIRE_03.webp" alt="Image 3">
+        <img src="image/DECOR_ALLEZ_VOUS-FAIRE_04.webp" alt="Image 4">
+        <img src="image/DECOR_ALLEZ_VOUS-FAIRE_05.webp" alt="Image 5">
+        <img src="image/DECOR_ALLEZ_VOUS-FAIRE_06.webp" alt="Image 6">
+        <img src="image/DECOR_ALLEZ_VOUS-FAIRE_07.webp" alt="Image 7">
+        <img src="image/DECOR_ALLEZ_VOUS-FAIRE_08.webp" alt="Image 8">
     </div>
-    
+    <button class="prev" onclick="moveSlide05(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide05(1)">&#10095;</button>
+    <div class="dots05">
+        <span class="dot05" onclick="currentSlide05(0)"></span>
+        <span class="dot05" onclick="currentSlide05(1)"></span>
+        <span class="dot05" onclick="currentSlide05(2)"></span>
+        <span class="dot05" onclick="currentSlide05(3)"></span>
+        <span class="dot05" onclick="currentSlide05(4)"></span>
+        <span class="dot05" onclick="currentSlide05(5)"></span>
+        <span class="dot05" onclick="currentSlide05(6)"></span>
+        <span class="dot05" onclick="currentSlide05(7)"></span>
+        <span class="dot05" onclick="currentSlide05(8)"></span>
+    </div>
+    <p> <h3> <FONT face="Helvetica"> Allez vous faire voir (2022) </h3> 
+<h5> encre, acrylique <br> </p> </h5>
+</div>
 
 <script>
-        let index07 = 0;
-        function moveSlide07(step) {
-            const slides07 = document.querySelector('.slides07');
-            const dots07 = document.querySelectorAll('.dot07');
-            index07 = (index07 + step + 10) % 10;
-            slides07.style.transform = `translateX(${-index07 * 100}%)`;
-            dots07.forEach(dot07 => dot06.classList.remove('active07'));
-            dots07[index07].classList.add('active07');
-        }
-        function currentSlide07(n) {
-            index07 = n;
-            moveSlide07(0);
-        }
-        document.addEventListener("DOMContentLoaded", () => moveSlide07(0));
+    let index05 = 0;
+    function moveSlide05(step) {
+        const slides05 = document.querySelector('.slides05');
+        const dots05 = document.querySelectorAll('.dot05');
+        index05 = (index05 + step + 8) % 8;
+        slides05.style.transform = `translateX(${-index05 * 100}%)`;
+        dots05.forEach(dot05 => dot05.classList.remove('active05'));
+        dots05[index05].classList.add('active05');
+    }
+    function currentSlide05(n) {
+        index05 = n;
+        moveSlide05(0);
+    }
+    document.addEventListener("DOMContentLoaded", () => moveSlide05(0));
+</script>
+
+<br>    
+<div class="slider06">
+    <div class="slides06">
+        <img src="image/DECOR_PATRIARCACA_01.webp" alt="Image 1">
+        <img src="image/DECOR_PATRIARCACA_02.webp" alt="Image 2">
+        <img src="image/DECOR_PATRIARCACA_03.webp" alt="Image 3">
+        <img src="image/DECOR_PATRIARCACA_04.webp" alt="Image 4">
+        <img src="image/DECOR_PATRIARCACA_05.webp" alt="Image 5">
+        <img src="image/DECOR_PATRIARCACA_06.webp" alt="Image 6">
+        <img src="image/DECOR_PATRIARCACA_07.webp" alt="Image 7">
+        <img src="image/DECOR_PATRIARCACA_08.webp" alt="Image 8">
+    </div>
+    <button class="prev" onclick="moveSlide06(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide06(1)">&#10095;</button>
+    <div class="dots06">
+        <span class="dot06" onclick="currentSlide06(0)"></span>
+        <span class="dot06" onclick="currentSlide06(1)"></span>
+        <span class="dot06" onclick="currentSlide06(2)"></span>
+        <span class="dot06" onclick="currentSlide06(3)"></span>
+        <span class="dot06" onclick="currentSlide06(4)"></span>
+        <span class="dot06" onclick="currentSlide06(5)"></span>
+        <span class="dot06" onclick="currentSlide06(6)"></span>
+        <span class="dot06" onclick="currentSlide06(7)"></span>
+        <span class="dot06" onclick="currentSlide06(8)"></span>
+    </div>
+    <p> <h3> <FONT face="Helvetica"> Patriarcaca (2022) </h3> 
+<h5> collage photo, peinture acrylique <br> </p> </h5>
+</div>
+
+<script>
+    let index06 = 0;
+    function moveSlide06(step) {
+        const slides06 = document.querySelector('.slides06');
+        const dots06 = document.querySelectorAll('.dot06');
+        index06 = (index06 + step + 8) % 8;
+        slides06.style.transform = `translateX(${-index06 * 100}%)`;
+        dots06.forEach(dot06 => dot06.classList.remove('active06'));
+        dots06[index06].classList.add('active06');
+    }
+    function currentSlide06(n) {
+        index06 = n;
+        moveSlide06(0);
+    }
+    document.addEventListener("DOMContentLoaded", () => moveSlide06(0));
+</script>
+
+<br>    
+<div class="slider07">
+    <div class="slides07">
+        <img src="image/DECOR_MR_RENARD_01.webp" alt="Image 1">
+        <img src="image/DECOR_MR_RENARD_02.webp" alt="Image 2">
+        <img src="image/DECOR_MR_RENARD_03.webp" alt="Image 3">
+        <img src="image/DECOR_MR_RENARD_04.webp" alt="Image 4">
+        <img src="image/DECOR_MR_RENARD_05.webp" alt="Image 5">
+        <img src="image/DECOR_MR_RENARD_06.webp" alt="Image 6">
+        <img src="image/DECOR_MR_RENARD_07.webp" alt="Image 7">
+        <img src="image/DECOR_MR_RENARD_08.webp" alt="Image 8">
+        <img src="image/DECOR_MR_RENARD_09.webp" alt="Image 9">
+        <img src="image/DECOR_MR_RENARD_10.webp" alt="Image 10">
+    </div>
+    <button class="prev" onclick="moveSlide07(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide07(1)">&#10095;</button>
+    <div class="dots07">
+        <span class="dot07" onclick="currentSlide07(0)"></span>
+        <span class="dot07" onclick="currentSlide07(1)"></span>
+        <span class="dot07" onclick="currentSlide07(2)"></span>
+        <span class="dot07" onclick="currentSlide07(3)"></span>
+        <span class="dot07" onclick="currentSlide07(4)"></span>
+        <span class="dot07" onclick="currentSlide07(5)"></span>
+        <span class="dot07" onclick="currentSlide07(6)"></span>
+        <span class="dot07" onclick="currentSlide07(7)"></span>
+        <span class="dot07" onclick="currentSlide07(8)"></span>
+        <span class="dot07" onclick="currentSlide07(9)"></span>
+        <span class="dot07" onclick="currentSlide07(10)"></span>
+    </div>
+    <p> <h3> <FONT face="Helvetica"> Bon appetit Monsieur Renard (2021) </h3> 
+<h5> Aquarelle digitale <br> </p> </h5>
+</div>
+
+<script>
+    let index07 = 0;
+    function moveSlide07(step) {
+        const slides07 = document.querySelector('.slides07');
+        const dots07 = document.querySelectorAll('.dot07');
+        index07 = (index07 + step + 10) % 10;
+        slides07.style.transform = `translateX(${-index07 * 100}%)`;
+        dots07.forEach(dot07 => dot07.classList.remove('active07'));
+        dots07[index07].classList.add('active07');
+    }
+    function currentSlide07(n) {
+        index07 = n;
+        moveSlide07(0);
+    }
+    document.addEventListener("DOMContentLoaded", () => moveSlide07(0));
     </script>
 
 
